@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/c4c8beef00.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <div id="menu-bars" class="fas fa-bars"></div>
+        <nav class="nav_bar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="service.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="blogs.html">Blogs</a>
+            <a href="contact.html">Contacts</a>
+        </nav>
+    </header>
+    
+<section class="about" id="about">
+    <h1 class="heading">About <span>Me</span></h1>
+    <div class="row">
+
+        <div class="image">
+            <img class="tilt" src="./images/PRIZE0861.JPG" alt="">
+        </div>
+
+        <div class="content">
+            <h3>My Name is <span>Bakary Jobe</span></h3>
+            <p class="info">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum eligendi ab, quam sint impedit soluta ipsam quidem aliquid corporis inventore voluptatum quas necessitatibus maiores voluptatibus sequi?
+
+            </p>
+            <div class="box-container">
+                <div class="box">
+                    <p><span>age: </span>22</p>
+                    <p><span>gender: </span>male</p>
+                    <p><span>freelance:</span>available</p>
+                </div>
+                <div class="box">
+                    <p><span>language: </span>Wollof/Mandinka/English</p>
+                    <p><span>phone: </span>+220 7912744</p>
+                    <p><span>email:</span>Bakaryjobe21@gmail.com</p>
+                    <p><span>address:</span>kotu, Gambia</p>
+                </div>
+            </div>
+            <a href="#" class="btn"></a>
+        </div>
+    </div>
+
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+
+    
+
+    
+
+    
+
+    <script>
+        let menu =document.querySelector('#menu-bars');
+        let header =document.querySelector('header');
+        menu.onclick = () =>{
+            menu.classList.toggle('fa-times');
+            header.classList.toggle('active');
+        }
+        window.onscroll = () =>{
+            menu.classList.remove('fa-times');
+            header.classList.remove('active');
+
+
+        };
+    </script>
+</body>
+</html>

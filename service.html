@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/c4c8beef00.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <header>
+        <div id="menu-bars" class="fas fa-bars"></div>
+        <nav class="nav_bar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="service.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="blogs.html">Blogs</a>
+            <a href="contact.html">Contacts</a>
+        </nav>
+    </header>
+    
+<section class="services" id="services">
+    <h1 class="heading"><span>My</span> Services</h1>
+
+    <div class="box-container">
+        <div class="box">
+            <i class="fas fa-code"></i>
+            <h3>Web Development</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nam, ullam mollitia quidem provident pariatur neque magni id, consequatur explicabo corrupti impedit amet doloribus nisi iste enim!</p>
+        </div>
+
+        <div class="box tilt">
+            <i class="fas fa-paint-brush"></i>
+            <h3>Graphic Designer</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nam, ullam mollitia quidem provident pariatur neque magni id, consequatur explicabo corrupti impedit amet doloribus nisi iste enim!</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-bullhorn"></i>
+            <h3>Seo Marketing</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nam, ullam mollitia quidem provident pariatur neque magni id, consequatur explicabo corrupti impedit amet doloribus nisi iste enim!</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-envelope"></i>
+            <h3>Email Marketing</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nam, ullam mollitia quidem provident pariatur neque magni id, consequatur explicabo corrupti impedit amet doloribus nisi iste enim!</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-mobile"></i>
+            <h3>Resposive Design</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nam, ullam mollitia quidem provident pariatur neque magni id, consequatur explicabo corrupti impedit amet doloribus nisi iste enim!</p>
+        </div>
+    </div>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+
+    
+
+    
+
+    
+
+    <script>
+        let menu =document.querySelector('#menu-bars');
+        let header =document.querySelector('header');
+        menu.onclick = () =>{
+            menu.classList.toggle('fa-times');
+            header.classList.toggle('active');
+        }
+        window.onscroll = () =>{
+            menu.classList.remove('fa-times');
+            header.classList.remove('active');
+
+
+        };
+    </script>
+</body>
+</html>
